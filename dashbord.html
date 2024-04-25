@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | MoneyPoint</title>
+    <link rel="stylesheet" href="dashbord.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to MoneyPoint Dashboard</h2>
+        <div class="toor">
+            <h6>HERE IS MONEYPOINT</h6>
+        </div>
+        <div class="sidebar-toggler" onclick="toggleSidebar()">
+            <h1><img src="checkout.svg" alt="Sidebar Toggler"><marquee>More Services are here within moneypoint</marquee></h1>
+            
+        </div>
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="#">Betting</a></li>
+                <li><a href="#">Data</a></li>
+                <li><a href="#">Airtime</a></li>
+                <li><a href="#">TV Subscription</a></li>
+                <li><a href="#">Owealth</a></li>
+                <li><a href="#">Loan</a></li>
+                <li><a href="#">Cards</a></li>
+            </ul>
+        </div>
+                
+        <div class="dashboard">
+            <div class="user-profile">
+                <img src="9187604.png" alt="User Avatar">
+                <h3>Welcome, ABDUL SALAM SAHEED</h3>
+            </div>
+            <div class="top-section">
+                <div class="account-details">
+                    <h3>Account Balance</h3>
+                    <p>#876,870.00</p>
+                </div>
+                
+                <div class="notifications">
+                    <h3>Notifications</h3>
+                    <div class="notification-icon">
+                        <img src="free-png.webp" alt="Notification Icon">
+                        <span class="badge">3</span>
+                    </div>
+                </div>
+            </div>
+            <div class="money-transfer">
+                <h3>Money Transfer</h3>
+                <div class="transfer-options">
+                    <div class="transfer-option" onclick="transferToMoneyPoint()">
+                        <img src="bbb.png" alt="MoneyPoint">
+                        <p>Transfer to MoneyPoint Account</p>
+                    </div>
+                    <div class="transfer-option" onclick="fundWallet()">
+                        <img src="bbb.png" alt="Wallet">
+                        <p>Fund Wallet</p>
+                    </div>
+                    <div class="transfer-option" onclick="transferToBank()">
+                        <img src="bbb.png" alt="Bank">
+                        <p>Transfer to Bank Account</p>
+                    </div>
+                </div>
+                <div class="bank-list">
+                    <h4>Transfer to Bank</h4>
+                    <ul>
+                        <li>Stanbic bank</li>
+                        <li>GTB bank</li>
+                        <li>UBA bank</li>
+                    </ul>
+                    <a href="#" onclick="showMoreBanks()">More Bank Services</a>
+                </div>
+            </div>
+            
+            <div class="transaction-history">
+                <h3>Transaction History</h3>
+                <ul>
+                    <li>Transaction 1 - 12,000.00</li>
+                    <li>Transaction 2 - #50,000.00</li>
+                    
+                </ul>
+            </div>
+            <div class="tier-levels">
+                
+                <div class="tier-1">
+                    <h3>Tier 1</h3>
+                    <p>Debit Limit: #200,000</p>
+                    <p>Daily Limit: #500,000</p>
+                </div>
+                <div class="tier-2">
+                    <h3>Tier 2</h3>
+                    <p>Debit Limit: #1,000,000</p>
+                    <p>Daily Limit: #5,000,000</p>
+                </div>
+                <div class="tier-3">
+                    <h3>Tier 3</h3>
+                    <p>Debit Limit: #5,000,000</p>
+                    <p>Daily Limit: Unlimited</p>
+                </div>
+                
+            </div>
+            <div class="tier-4">
+                <a href="#" onclick="upgradetier()"><marquee>UPGRADE YOUR TIER</marquee></a>
+            </div>
+        </div>
+        <div class="bank-icons">
+            <a href="#" onclick="redirectTo('transfer.html')">
+                <img src="trans.png" alt="Transfer">
+                <p>Transfer</p>
+            </a>
+            <a href="#" onclick="showForm('fundWallet.Form')">
+                <img src="images.png" alt="Fund Wallet">
+                <p>Fund Wallet</p>
+            </a>
+            <a href="#" onclick="showForm('transferToBankForm')">
+                <img src="trans.png" alt="Transfer to Bank Account">
+                <p>Transfer to Bank</p>
+            </a>
+            <a href="#" onclick="redirectTo('Checkbalance.html')">
+                <img src="images (1).png" alt="Checkbalance">
+                <p>Check Balance</p>
+            </a>
+            <a href="#" onclick="showMoreServices()">
+                <img src="imgggg.jfif" alt="More Services">
+                <p>More Services</p>
+            </a>
+        </div>
+        
+        <div id="transferForm" class="form hidden">
+            welcome
+        </div>
+        
+        <div id="fundWalletForm" class="form hidden">
+           YOUR ACCOUNT NUM:
+           00034564743
+           YOUR ACCOUNT NAME:
+           SAHEED ABDUL SALAM
+        </div>
+            
+        <div id="transferToBankForm" class="form hidden">
+            Access Bank<br>
+            Zenith Bank<br>
+            Guaranty Trust Bank (GTBank)<br>
+            United Bank for Africa (UBA)<br>
+            First Bank of Nigeria<br>
+            Fidelity Bank<br>
+            Union Bank of Nigeria<br>
+            Ecobank Nigeria<br>
+            Stanbic IBTC Bank<br>
+            Sterling Bank<br>
+            Polaris Bank<br>
+            Wema Bank<br>
+            Heritage Bank<br>
+            Keystone Bank<br>
+            Citibank Nigeria<br>
+            Providus Bank<br>
+            SunTrust Bank<br>
+            Titan Trust Bank<br>
+            Coronation Merchant Bank<br>
+            Nova Merchant Bank<br>
+            Rand Merchant Bank (RMB)<br>
+            Standard Chartered Bank Nigeria<br>
+            Jaiz Bank<br>
+            First City Monument Bank (FCMB)<br>
+            Unity Bank<br>
+            Globus Bank<br>
+            Parkways Bank
+            CitiTrust Financial Services Limited<br>
+            AMCON (Asset Management Corporation of Nigeria)<br>
+            Nigeria International Bank (Citibank Nigeria Limited)<br>
+        </div>
+        
+        <div id="checkBalanceForm" class="form hidden">
+            #867,500,400
+        </div>
+        
+        <div id="moreServices" class="hidden">
+            LOAN AND CREDITS FACILITIES
+            SAVINGS AND INVESTMENT ACCOUNT
+            INSURANCE PRODUCT
+        </div>
+        
+        <div class="lasting">
+        <p><a href="login.html">Logout</a></p>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+<script>
+    function redirectTo(link) {
+    window.location.href = link;
+}
+
+function showForm(formId) {
+    hideAllForms();
+    document.getElementById(formId).classList.remove("hidden");
+}
+
+function showCheckBalance() {
+    var checkBalanceForm = document.getElementById("checkBalanceForm");
+    var checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.id = "checkBalanceCheckbox";
+    checkbox.onclick = function() {
+        if (checkbox.checked) {
+            // Show account number
+            alert("Your account number is: XXXX-XXXX-XXXX-XXXX");
+        }
+    };
+    var label = document.createElement("label");
+    label.htmlFor = "checkBalanceCheckbox";
+    label.appendChild(document.createTextNode("Check Balance"));
+    checkBalanceForm.innerHTML = "";
+    checkBalanceForm.appendChild(checkbox);
+    checkBalanceForm.appendChild(label);
+}
+
+function showMoreServices() {
+    // Implement your logic to show more services icons
+}
+
+function hideAllForms() {
+    var forms = document.querySelectorAll(".form");
+    forms.forEach(function(form) {
+        form.classList.add("hidden");
+    });
+}
+function toggleSidebar() {
+    var sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('active');
+}
+
+
+
+</script>
+</html>
