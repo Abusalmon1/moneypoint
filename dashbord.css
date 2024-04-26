@@ -355,51 +355,40 @@ body {
   }
   .sidebar {
     width: 200px;
-    /* Adjust sidebar width for smaller screens */
   }
   .sidebar ul li {
     padding: 8px 16px;
-    /* Adjust sidebar item padding */
   }
   .dashboard {
     padding: 10px;
-    /* Adjust padding for dashboard content */
   }
   .top-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    /* Stack top section items vertically */
   }
   .account-details,
   .notifications {
     width: 100%;
-    /* Make account details and notifications full width */
     margin-bottom: 10px;
-    /* Adjust margin between account details and notifications */
   }
   .transaction-history ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    /* Stack transaction history items vertically */
     gap: 10px;
-    /* Adjust gap between transaction history items */
   }
   .tier-levels {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    /* Stack tier levels vertically */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    /* Center align tier levels */
     margin-top: 10px;
-    /* Adjust margin between tier levels */
   }
   .tier-4 {
     width: 100%;
@@ -443,15 +432,12 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    /* Stack transfer options vertically */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    /* Center transfer options horizontally */
   }
   .transfer-option {
     margin: 0 0 20px;
-    /* Adjust margin for better spacing */
   }
 }
 /*# sourceMappingURL=dashbord.css.map */

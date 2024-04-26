@@ -312,30 +312,30 @@ body {
         font-size: 24px;
     }
     .sidebar {
-        width: 200px; /* Adjust sidebar width for smaller screens */
+        width: 200px; 
     }
     .sidebar ul li {
-        padding: 8px 16px; /* Adjust sidebar item padding */
+        padding: 8px 16px; 
     }
     .dashboard {
-        padding: 10px; /* Adjust padding for dashboard content */
+        padding: 10px; 
     }
     .top-section {
-        flex-direction: column; /* Stack top section items vertically */
+        flex-direction: column; 
     }
     .account-details,
     .notifications {
-        width: 100%; /* Make account details and notifications full width */
-        margin-bottom: 10px; /* Adjust margin between account details and notifications */
+        width: 100%; 
+        margin-bottom: 10px; 
     }
     .transaction-history ul {
-        flex-direction: column; /* Stack transaction history items vertically */
-        gap: 10px; /* Adjust gap between transaction history items */
+        flex-direction: column; 
+        gap: 10px; 
     }
     .tier-levels {
-        flex-direction: column; /* Stack tier levels vertically */
-        align-items: center; /* Center align tier levels */
-        margin-top: 10px; /* Adjust margin between tier levels */
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 10px; 
     }
     .tier-4 {
         width: 100%; 
@@ -369,12 +369,12 @@ body {
 }
 @media screen and (max-width: 768px) {
     .transfer-options {
-        flex-direction: column; /* Stack transfer options vertically */
-        align-items: center; /* Center transfer options horizontally */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .transfer-option {
-        margin: 0 0 20px; /* Adjust margin for better spacing */
+        margin: 0 0 20px; 
     }
 }
 
